@@ -1,10 +1,9 @@
-import NavBar from "../components/NavBar"
+import NavBar from "../components/Utility/NavBarLogin"
 
 function HomePage() {
   return (
     <div>
         <NavBar/>
-        Home page
       
     </div>
   )
