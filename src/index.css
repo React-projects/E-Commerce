@@ -332,6 +332,9 @@ body {
 /* end products page */
 
 /* pagination */
+.active>.page-link{
+  border-color:#dee2e6 !important;
+}
 .page-link {
   background-color: #f9f9f9 !important;
   color: #272727 !important;

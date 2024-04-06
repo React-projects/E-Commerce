@@ -3,10 +3,10 @@ import { images } from "../../assets/Imports/images";
 import CategoryCard from "../Category/CategoryCard";
 import SubTitle from "../Utility/SubTitle";
 
-const HomeCategory = () => {
+const HomeCategory = ({title,}) => {
   return (
     <Container>
-      <SubTitle title=" التصنيفات" btntitle="المزيد"  />
+      <SubTitle title=" التصنيفات" btntitle="المزيد" PathText="allcategory"  />
       <Row className="my-2 ">
         <CategoryCard img={images.clothe} background="#F4DBA5" title='اجهزه منزليه' />
         <CategoryCard img={images.cat2} background="#0034FF"title='ادوات مطبخ'  />
