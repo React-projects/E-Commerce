@@ -4,7 +4,9 @@ import { images } from "../../assets/Imports/images";
 
 function BrandCategory() {
   return (
-    <Container>
+    <Container className="py-4">
+            <h3 className="admin-content-text">كل المركات</h3>
+
       <Row className="my-1 justify-content-between">
         <BrandCard img={images.brand1} />
         <BrandCard img={images.brand2} />

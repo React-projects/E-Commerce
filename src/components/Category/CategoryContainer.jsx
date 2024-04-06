@@ -4,7 +4,7 @@ import { images } from "../../assets/Imports/images";
 
 function CategoryContainer() {
   return (
-    <Container>
+    <Container className="py-4">
       <h3 className="admin-content-text">كل التصنيفات</h3>
       <Row className="my-4 ">
         <CategoryCard
