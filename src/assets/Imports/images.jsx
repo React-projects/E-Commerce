@@ -10,6 +10,10 @@ import cat2 from "../Images/cat2.png";
 import labtop from "../Images/labtop.png";
 import sale from "../Images/sale.png";
 import pic from "../Images/pic.png";
+import prod1 from "../Images/item.png";
+import favoff from "../Images/fav-off.png";
+import rate from "../Images/rate.png";
+import laptops from "../Images/laptops.png";
 
 export const images = {
   logo,
@@ -24,4 +28,8 @@ export const images = {
   labtop,
   sale,
   pic,
+  prod1,
+  favoff,
+  rate,
+  laptops
 };
