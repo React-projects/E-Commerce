@@ -1,17 +1,22 @@
 import { Carousel } from "react-bootstrap";
-import { images } from "../../../assets/Imports/images";
+import { images } from "../../assets/Imports/images";
 import { useState } from "react";
 
 const Slider = () => {
-    const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0);
 
-    const handleSelect = (selectedIndex) => {
-      setIndex(selectedIndex);
-    };
-  
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
+
   return (
     <Carousel>
-      <Carousel.Item  activeIndex={index} onSelect={handleSelect} className="slider-background" interval={2000}>
+      <Carousel.Item
+        activeIndex={index}
+        onSelect={handleSelect}
+        className="slider-background"
+        interval={2000}
+      >
         <div className="d-flex flex-row justify-content-center align-items-center">
           <img
             style={{ height: "296px", width: "313.53px" }}
