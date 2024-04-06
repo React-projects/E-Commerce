@@ -14,6 +14,13 @@ import prod1 from "../Images/item.png";
 import favoff from "../Images/fav-off.png";
 import rate from "../Images/rate.png";
 import laptops from "../Images/laptops.png";
+import brand1 from "../Images/brand1.png";
+import brand2 from "../Images/brand2.png";
+import brand3 from "../Images/brand3.png";
+import facebook from "../Images/facebook.png";
+import instagram from "../Images/instagram.png";
+import twitter from "../Images/twitter.png";
+import phone from "../Images/phone.png";
 
 export const images = {
   logo,
@@ -31,5 +38,12 @@ export const images = {
   prod1,
   favoff,
   rate,
-  laptops
+  laptops,
+  brand1,
+  brand2,
+  brand3,
+  facebook,
+  instagram,
+  twitter,
+  phone
 };
