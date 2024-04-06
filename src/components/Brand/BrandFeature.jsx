@@ -9,7 +9,8 @@ const BrandFeatured = ({ title, btntitle }) => {
   return (
     <div className="my-3">
       <Container>
-        <SubTitle title={title} btntitle={btntitle} />
+        
+        <SubTitle title={title} btntitle={btntitle} PathText="/allbrands" />
 
         <Row className="my-1 justify-content-between">
           <BrandCard img={images.brand1} />

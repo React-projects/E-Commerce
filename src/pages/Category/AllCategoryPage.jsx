@@ -1,7 +1,7 @@
 import CategoryContainer from "../../Components/Category/CategoryContainer";
 import Pagination from "../../Components/Utility/Pagination";
 
-function AllCategory() {
+function AllCategoryPage() {
   return (
     <div style={{minHeight:'740px'}}>
       <CategoryContainer></CategoryContainer>{" "}
@@ -11,4 +11,4 @@ function AllCategory() {
   );
 }
 
-export default AllCategory;
+export default AllCategoryPage;

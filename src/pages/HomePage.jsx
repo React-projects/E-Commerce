@@ -15,7 +15,7 @@ function HomePage() {
       <DiscountSection />
 
       <ProductCategory title="احدث  الازياء" btntitle="المزيد" />
-      <BrandFeatured title="  اشهر الماركات" btntitle="المزيد"/>
+      <BrandFeatured title="  اشهر الماركات" btntitle="المزيد" pathText="/allbrands"/>
 
     </div>
   );
