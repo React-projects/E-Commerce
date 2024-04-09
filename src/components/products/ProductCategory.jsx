@@ -3,11 +3,11 @@ import { Container  } from "react-bootstrap";
 import ProductCard from "./productsCard";
 import SubTitle from "../Utility/SubTitle";
 
-const CardProductsContainer = ({ title, btntitle }) => {
+const CardProductsContainer = ({ title, btntitle ,PathText}) => {
   return (
     <Container>
-      <SubTitle title={title} btntitle={btntitle}/>
-      <Row W>
+      <SubTitle title={title} btntitle={btntitle} PathText={PathText}/>
+      <Row >
         <ProductCard title="1" />
         <ProductCard title="2" />
         <ProductCard title="3" />

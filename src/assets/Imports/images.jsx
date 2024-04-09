@@ -21,6 +21,7 @@ import facebook from "../Images/facebook.png";
 import instagram from "../Images/instagram.png";
 import twitter from "../Images/twitter.png";
 import phone from "../Images/phone.png";
+import sort from "../Images/sort.png";
 
 export const images = {
   logo,
@@ -45,5 +46,5 @@ export const images = {
   facebook,
   instagram,
   twitter,
-  phone
+  phone, sort
 };

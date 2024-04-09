@@ -8,15 +8,25 @@ import ProductCategory from "../Components/products/ProductCategory";
 function HomePage() {
   return (
     <div>
-   
       <Slider />
       <HomeCategory />
-      <ProductCategory title="الاكثر مبيعا" btntitle="المزيد" />
+      <ProductCategory
+        title="الاكثر مبيعا"
+        btntitle="المزيد"
+        PathText="/products"
+      />
       <DiscountSection />
 
-      <ProductCategory title="احدث  الازياء" btntitle="المزيد" />
-      <BrandFeatured title="  اشهر الماركات" btntitle="المزيد" pathText="/allbrands"/>
-
+      <ProductCategory
+        title="احدث  الازياء"
+        btntitle="المزيد"
+        PathText="/products"
+      />
+      <BrandFeatured
+        title="  اشهر الماركات"
+        btntitle="المزيد"
+        PathText="/allbrands"
+      />
     </div>
   );
 }
