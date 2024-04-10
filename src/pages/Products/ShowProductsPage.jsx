@@ -2,7 +2,7 @@ import CategoryHeader from "../../Components/Category/CategoryHeader";
 import SearchCountRules from "../../Components/Utility/SearchCountRules";
 import { Container, Row, Col } from "react-bootstrap";
 import SearchFilter from "../../Components/Utility/SearchFilter";
-import CardProductsContainer from "../../Components/products/ProductCategory";
+import CardProductsContainer from "../../Components/products/CardProductsContainer";
 import Pagination from "../../Components/Utility/Pagination";
 
 const ShowProductsPage = () => {

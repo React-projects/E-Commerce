@@ -3,7 +3,7 @@ import DiscountSection from "../Components/Home/DiscountSection";
 import HomeCategory from "../Components/Home/HomeCategory";
 import Slider from "../Components/Home/Slider";
 
-import ProductCategory from "../Components/products/ProductCategory";
+import ProductCategory from "../Components/products/CardProductsContainer";
 
 function HomePage() {
   return (
