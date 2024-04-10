@@ -27,6 +27,8 @@ import mobile1 from "../Images/mobile1.png";
 import mobile2 from "../Images/mobile2.png";
 import arrowRight from "../Images/prev.png";
 import arrowLeft from "../Images/next.png";
+import deleteicon from "../Images/delete.png";
+
 
 export const images = {
   logo,
@@ -57,5 +59,5 @@ export const images = {
   mobile1,
   mobile2,
   arrowRight,
-  arrowLeft
+  arrowLeft,deleteicon
 };
