@@ -7,6 +7,7 @@ import RigesterPage from "./pages/Auth/RigesterPage";
 import AllCategoryPage from "./pages/Category/AllCategoryPage";
 import AllBrandsPage from "./pages/Brand/AllBrandsPage";
 import ShowProductsPage from "./pages/Products/ShowProductsPage";
+import ProductDetailsPage from "./pages/Products/ProductDetailsPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/allcategory" element={<AllCategoryPage />} />
           <Route path="/allbrands" element={<AllBrandsPage />} />
           <Route path="/products" element={<ShowProductsPage />} />
+          <Route path="/product/:id" element={<ProductDetailsPage />} />
         </Routes>
       </BrowserRouter>
       <Footer />

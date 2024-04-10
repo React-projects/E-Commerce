@@ -1,5 +1,6 @@
 import { Card, Col } from "react-bootstrap";
 import { images } from "../../assets/Imports/images";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ title }) => {
   return (
@@ -15,7 +16,13 @@ const ProductCard = ({ title }) => {
           boxShadow: "0 2px 2px 0 rgba(151,151,151,0.5)",
         }}
       >
-        <Card.Img style={{ height: "228px", width: "100%" }} src={images.prod1} />
+        <Link to="/product/:id">
+          {" "}
+          <Card.Img
+            style={{ height: "228px", width: "100%" }}
+            src={images.prod1}
+          />
+        </Link>
         <div className="d-flex justify-content-end mx-2">
           <img
             src={images.favoff}

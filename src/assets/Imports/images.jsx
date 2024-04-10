@@ -22,6 +22,11 @@ import instagram from "../Images/instagram.png";
 import twitter from "../Images/twitter.png";
 import phone from "../Images/phone.png";
 import sort from "../Images/sort.png";
+import mobile from "../Images/mobile.png";
+import mobile1 from "../Images/mobile1.png";
+import mobile2 from "../Images/mobile2.png";
+import arrowRight from "../Images/prev.png";
+import arrowLeft from "../Images/next.png";
 
 export const images = {
   logo,
@@ -46,5 +51,11 @@ export const images = {
   facebook,
   instagram,
   twitter,
-  phone, sort
+  phone,
+  sort,
+  mobile,
+  mobile1,
+  mobile2,
+  arrowRight,
+  arrowLeft
 };
