@@ -20,16 +20,26 @@ const LoginPage = () => {
           <button className="btn-login mx-auto mt-4">تسجيل الدخول</button>
           <label className="mx-auto my-4">
             ليس لديك حساب ؟{" "}
-            <Link to="/register" style={{textDecoration:"none"}}>
-            <span style={{ cursor: "pointer" }} className="text-danger">
-              اضغط هنا
-            </span>
+            <Link to="/register" style={{ textDecoration: "none" }}>
+              <span style={{ cursor: "pointer" }} className="text-danger">
+                اضغط هنا
+              </span>
             </Link>
           </label>
 
-          <label className="mx-auto text-center">الدخول بحساب الادمن</label>
+          <label className="mx-auto my-4">
+                    <Link to="/admin/allproducts" style={{textDecoration:'none'}}>
+                        <span style={{ cursor: "pointer" }} className="text-danger">
+                            الدخول ادمن
+                        </span>
+                    </Link>
 
-          <label className="mx-auto text-center">الدخول بحساب المستخدم</label>
+                    <Link to="/user/allorders" style={{textDecoration:'none'}}>
+                        <span style={{ cursor: "pointer" }} className="text-danger mx-3">
+                            الدخول مستخدم
+                        </span>
+                    </Link>
+                </label>
         </Col>
       </Row>
     </Container>
