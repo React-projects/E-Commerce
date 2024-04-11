@@ -29,6 +29,7 @@ import arrowRight from "../Images/prev.png";
 import arrowLeft from "../Images/next.png";
 import deleteicon from "../Images/delete.png";
 import avatar from "../Images/avatar.png";
+import add from "../Images/add.png";
 
 export const images = {
   logo,
@@ -61,6 +62,6 @@ export const images = {
   arrowRight,
   arrowLeft,
   deleteicon,
-  avatar
+  avatar,add
 
 };

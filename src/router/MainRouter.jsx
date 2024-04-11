@@ -13,8 +13,8 @@ import AdminAllOrdersPage from "../pages/Admin/AdminAllOrdersPage";
 import AdminOrdersDetails from "../pages/Admin/AdminOrdersDetails";
 import AdminAddBrandPage from "../pages/Admin/AdminAddBrandPage";
 import AdminAddCategoryPage from "../pages/Admin/AdminAddCategoryPage";
-
 import AdminAddSubCategoryPage from "../pages/Admin/AdminAddSubCategoryPage";
+import AdminAddProductsPage from "../pages/Admin/AdminAddProductsPage";
 const MainRouter = () => {
   return (
     <BrowserRouter>
@@ -34,6 +34,7 @@ const MainRouter = () => {
         <Route path="/admin/addbrand" element={<AdminAddBrandPage/>} />
         <Route path="/admin/addcategory" element={<AdminAddCategoryPage/>} />
         <Route path="/admin/addsubcategory" element={<AdminAddSubCategoryPage/>} />
+        <Route path="/admin/addproduct" element={<AdminAddProductsPage/>} />
      
       </Routes>
     </BrowserRouter>
