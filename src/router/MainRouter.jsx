@@ -11,6 +11,8 @@ import PaymentPage from "../pages/Payment/PaymentPage";
 import AdminAllProductsPage from "../pages/Admin/AdminAllProductsPage";
 import AdminAllOrdersPage from "../pages/Admin/AdminAllOrdersPage";
 import AdminOrdersDetails from "../pages/Admin/AdminOrdersDetails";
+import AdminAddBrandPage from "../pages/Admin/AdminAddBrandPage";
+import AdminAddCategoryPage from "../pages/Admin/AdminAddCategoryPage";
 const MainRouter = () => {
   return (
     <BrowserRouter>
@@ -27,6 +29,9 @@ const MainRouter = () => {
         <Route path="/admin/allproducts" element={<AdminAllProductsPage />} />
         <Route path="/admin/allorders" element={<AdminAllOrdersPage />} />
         <Route path="/admin/orders/:id" element={<AdminOrdersDetails />} />
+        <Route path="/admin/addbrand" element={<AdminAddBrandPage/>} />
+        <Route path="/admin/addcategory" element={<AdminAddCategoryPage/>} />
+     
       </Routes>
     </BrowserRouter>
   );
