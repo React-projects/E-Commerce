@@ -9,6 +9,8 @@ import ProductDetailsPage from "../pages/Products/ProductDetailsPage";
 import CartPage from "../pages/Cart/CartPage";
 import PaymentPage from "../pages/Payment/PaymentPage";
 import AdminAllProductsPage from "../pages/Admin/AdminAllProductsPage";
+import AdminAllOrdersPage from "../pages/Admin/AdminAllOrdersPage";
+import AdminOrdersDetails from "../pages/Admin/AdminOrdersDetails";
 const MainRouter = () => {
   return (
     <BrowserRouter>
@@ -23,6 +25,8 @@ const MainRouter = () => {
         <Route path="/cart" element={<CartPage />} />
         <Route path="/order/paymethoud" element={<PaymentPage />} />
         <Route path="/admin/allproducts" element={<AdminAllProductsPage />} />
+        <Route path="/admin/allorders" element={<AdminAllOrdersPage />} />
+        <Route path="/admin/orders/:id" element={<AdminOrdersDetails />} />
       </Routes>
     </BrowserRouter>
   );
