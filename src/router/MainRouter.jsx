@@ -15,6 +15,7 @@ import AdminAddBrandPage from "../pages/Admin/AdminAddBrandPage";
 import AdminAddCategoryPage from "../pages/Admin/AdminAddCategoryPage";
 import AdminAddSubCategoryPage from "../pages/Admin/AdminAddSubCategoryPage";
 import AdminAddProductsPage from "../pages/Admin/AdminAddProductsPage";
+import UserAllOrderPage from "../pages/User/UserAllOrderPage";
 const MainRouter = () => {
   return (
     <BrowserRouter>
@@ -35,6 +36,7 @@ const MainRouter = () => {
         <Route path="/admin/addcategory" element={<AdminAddCategoryPage/>} />
         <Route path="/admin/addsubcategory" element={<AdminAddSubCategoryPage/>} />
         <Route path="/admin/addproduct" element={<AdminAddProductsPage/>} />
+        <Route path="/user/allorders" element={<UserAllOrderPage/>} />
      
       </Routes>
     </BrowserRouter>
