@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
-import UserSideBar from "../../Components/User/UserSideBar";
-import UserFavoriteProducts from "../../Components/User/UserFavoriteProducts";
+import UserSideBar from "../../components/User/UserSideBar";
+import UserFavoriteProducts from "../../components/User/UserFavoriteProducts";
 function UserFavoritePage() {
   return (
     <Container className="py-5">

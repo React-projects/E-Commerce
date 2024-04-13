@@ -1,5 +1,5 @@
-import NavBarLogin from "./Components/Utility/NavBarLogin";
-import Footer from "./Components/Utility/Footer";
+import NavBarLogin from "./components/Utility/NavBarLogin";
+import Footer from "./components/Utility/Footer";
 import MainRouter from "./router/MainRouter";
 
 function App() {

@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
-import UserSideBar from "../../Components/User/UserSideBar";
-import UserAllOrders from "../../Components/User/UserAllOrders";
+import UserSideBar from "../../components/User/UserSideBar";
+import UserAllOrders from "../../components/User/UserAllOrders";
 function UserAllOrderPage() {
   return (
     <Container className="py-5">

@@ -1,7 +1,7 @@
-import CategoryHeader from "../../Components/Category/CategoryHeader"
-import RatingProduct from "../../Components/Rate/RatingProduct"
-import ProductsDetails from "../../Components/products/ProductsDetails"
-import CardProductsContainer from "../../Components/products/CardProductsContainer"
+import CategoryHeader from "../../components/Category/CategoryHeader"
+import RatingProduct from "../../components/Rate/RatingProduct"
+import ProductsDetails from "../../components/products/ProductsDetails"
+import CardProductsContainer from "../../components/products/CardProductsContainer"
 
 function ProductDetailsPage() {
   return (

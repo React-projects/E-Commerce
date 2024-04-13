@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
-import UserSideBar from "../../Components/User/UserSideBar";
-import UserAllAddress from "../../Components/User/UserAllAddress";
+import UserSideBar from "../../components/User/UserSideBar";
+import UserAllAddress from "../../components/User/UserAllAddress";
 const UserAllAddressPage = () => {
   return (
     <Container className="py-5">

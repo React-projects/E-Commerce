@@ -1,5 +1,5 @@
 import React from 'react'
-import PaymentMethods from '../../Components/Payment/PaymentMethods'
+import PaymentMethods from '../../components/Payment/PaymentMethods'
 
 function PaymentPage() {
   return (

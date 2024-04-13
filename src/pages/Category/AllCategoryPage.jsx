@@ -1,5 +1,5 @@
-import CategoryContainer from "../../Components/Category/CategoryContainer";
-import Pagination from "../../Components/Utility/Pagination";
+import CategoryContainer from "../../components/Category/CategoryContainer";
+import Pagination from "../../components/Utility/Pagination";
 
 function AllCategoryPage() {
   return (

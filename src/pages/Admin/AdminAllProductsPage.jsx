@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
-import AdminSlideBar from "../../Components/Admin/AdminSlideBar";
-import AdminAllProducts from "../../Components/Admin/AdminAllProducts";
-import Pagination from "../../Components/Utility/Pagination";
+import AdminSlideBar from "../../components/Admin/AdminSlideBar";
+import AdminAllProducts from "../../components/Admin/AdminAllProducts";
+import Pagination from "../../components/Utility/Pagination";
 
 function AdminAllProductsPage() {
   return (

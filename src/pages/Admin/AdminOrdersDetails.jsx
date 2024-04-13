@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
-import AdminSlideBar from "../../Components/Admin/AdminSlideBar";
-import CartItem from "../../Components/Cart/CartItem";
-import ClientDetails from "../../Components/Admin/ClientDetails";
+import AdminSlideBar from "../../components/Admin/AdminSlideBar";
+import CartItem from "../../components/Cart/CartItem";
+import ClientDetails from "../../components/Admin/ClientDetails";
 
 function AdminOrdersDetails() {
   return (

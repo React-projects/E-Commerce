@@ -1,9 +1,9 @@
-import CategoryHeader from "../../Components/Category/CategoryHeader";
-import SearchCountRules from "../../Components/Utility/SearchCountRules";
+import CategoryHeader from "../../components/Category/CategoryHeader";
+import SearchCountRules from "../../components/Utility/SearchCountRules";
 import { Container, Row, Col } from "react-bootstrap";
-import SearchFilter from "../../Components/Utility/SearchFilter";
-import CardProductsContainer from "../../Components/products/CardProductsContainer";
-import Pagination from "../../Components/Utility/Pagination";
+import SearchFilter from "../../components/Utility/SearchFilter";
+import CardProductsContainer from "../../components/products/CardProductsContainer";
+import Pagination from "../../components/Utility/Pagination";
 
 const ShowProductsPage = () => {
   return (

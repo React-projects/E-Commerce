@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
-import UserSideBar from "../../Components/User/UserSideBar";
-import UserEditAddress from "../../Components/User/UserEditAddress";
+import UserSideBar from "../../components/User/UserSideBar";
+import UserEditAddress from "../../components/User/UserEditAddress";
 const UserEditAddressPage = () => {
   return (
     <Container className="py-5">

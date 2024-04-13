@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
-import AdminSlideBar from "../../Components/Admin/AdminSlideBar";
-import AdminAddProducts from "../../Components/Admin/AdminAddProducts";
+import AdminSlideBar from "../../components/Admin/AdminSlideBar";
+import AdminAddProducts from "../../components/Admin/AdminAddProducts";
 function AdminAddProductsPage() {
   return (
     <Container className="py-5">

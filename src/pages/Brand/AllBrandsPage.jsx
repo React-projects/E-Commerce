@@ -1,5 +1,5 @@
-import BrandCategory from "../../Components/Brand/BrandCategory";
-import Pagination from "../../Components/Utility/Pagination";
+import BrandCategory from "../../components/Brand/BrandCategory";
+import Pagination from "../../components/Utility/Pagination";
 
 function AllBrandsPage() {
   return (

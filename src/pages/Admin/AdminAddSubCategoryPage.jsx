@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
-import AdminSlideBar from "../../Components/Admin/AdminSlideBar";
-import AdminAddSubCategory from "../../Components/Admin/AdminAddSubCategory";
+import AdminSlideBar from "../../components/Admin/AdminSlideBar";
+import AdminAddSubCategory from "../../components/Admin/AdminAddSubCategory";
 
 function AdminAddSubCategoryPage() {
   return (

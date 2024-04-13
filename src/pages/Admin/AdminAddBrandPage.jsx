@@ -1,11 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
-import AdminSlideBar from "../../Components/Admin/AdminSlideBar";
-import AdminAddBrand from "../../Components/Admin/AdminAddBrand";
+import AdminSlideBar from "../../components/Admin/AdminSlideBar";
+import AdminAddBrand from "../../components/Admin/AdminAddBrand";
 function AddBrand() {
- 
-
-
-
   return (
     <Container className="py-5">
       <Row>
@@ -13,17 +9,11 @@ function AddBrand() {
           <AdminSlideBar />
         </Col>
         <Col sm="12" md="10">
-        <AdminAddBrand/>
+          <AdminAddBrand />
         </Col>
       </Row>
     </Container>
   );
 }
 
-
-
-
-  
-
-
-export default AddBrand
+export default AddBrand;

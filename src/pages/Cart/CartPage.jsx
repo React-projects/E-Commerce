@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
-import CartItem from "../../Components/Cart/CartItem";
-import CartDiscount from "../../Components/Cart/CartDiscount";
+import CartItem from "../../components/Cart/CartItem";
+import CartDiscount from "../../components/Cart/CartDiscount";
 
 function CartPage() {
   return (

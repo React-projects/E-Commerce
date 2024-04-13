@@ -1,9 +1,9 @@
-import BrandFeatured from "../Components/Brand/BrandFeature";
-import DiscountSection from "../Components/Home/DiscountSection";
-import HomeCategory from "../Components/Home/HomeCategory";
-import Slider from "../Components/Home/Slider";
+import BrandFeatured from "../components/Brand/BrandFeature";
+import DiscountSection from "../components/Home/DiscountSection";
+import HomeCategory from "../components/Home/HomeCategory";
+import Slider from "../components/Home/Slider";
 
-import ProductCategory from "../Components/products/CardProductsContainer";
+import ProductCategory from "../components/products/CardProductsContainer";
 
 function HomePage() {
   return (
