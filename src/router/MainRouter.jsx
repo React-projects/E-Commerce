@@ -18,9 +18,9 @@ import AdminAddProductsPage from "../pages/Admin/AdminAddProductsPage";
 import UserAllOrderPage from "../pages/User/UserAllOrderPage";
 import UserFavoriteProductsPage from "../pages/User/UserFavoriteProductsPage";
 import UserAllAddressPage from "../pages/User/UserAllAddressPage";
-import UserAddAddress from "../Components/User/UserAddAddress";
 import UserAddAddressPage from "../pages/User/UserAddAddressPage";
 import UserEditAddressPage from "../pages/User/UserEditAddressPage";
+import UserProfilePage from "../pages/User/UserProfilePage";
 const MainRouter = () => {
   return (
     <BrowserRouter>
@@ -46,6 +46,7 @@ const MainRouter = () => {
         <Route path="/user/addresses" element={<UserAllAddressPage/>} />
         <Route path="/user/add-address" element={<UserAddAddressPage/>} />
         <Route path="/user/edit-address" element={<UserEditAddressPage/>} />
+        <Route path="/user/profile" element={<UserProfilePage/>} />
      
       </Routes>
     </BrowserRouter>
