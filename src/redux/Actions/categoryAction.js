@@ -7,7 +7,7 @@ export const GetAllCategoriesData = () => async (dispatch) => {
   try {
     dispatch({
       type: GET_ALL_CATEGORY,
-      payload: response.products 
+      payload: response
     });
   } catch (error) {
     dispatch({

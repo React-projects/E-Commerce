@@ -1,22 +1,48 @@
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Spinner } from "react-bootstrap";
 import { images } from "../../assets/Imports/images";
 import CategoryCard from "../Category/CategoryCard";
 import SubTitle from "../Utility/SubTitle";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import GetAllCategoriesData from "../../redux/Actions/categoryAction";
 
-const HomeCategory = ({title,}) => {
+const HomeCategory = ({ title }) => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(GetAllCategoriesData());
+  }, [dispatch]);
+
+  const category = useSelector((state) => state.allcategoryData.category);
+  const loading = useSelector((state) => state.allcategoryData.loading);
+
+  console.log(category.products);
+  console.log(loading);
+
   return (
     <Container>
-      <SubTitle title=" التصنيفات" btntitle="المزيد" PathText="allcategory"  />
+      <SubTitle title=" التصنيفات" btntitle="المزيد" PathText="allcategory" />
       <Row className="my-2 ">
-        <CategoryCard img={images.clothe} background="#F4DBA5" title='اجهزه منزليه' />
-        <CategoryCard img={images.cat2} background="#0034FF"title='ادوات مطبخ'  />
-        <CategoryCard img={images.labtop} background="#FFD3E8"title='تخفيضات'  />
-        <CategoryCard img={images.clothe} background="#55CFDF"title='ملابس رجال'  />
-        <CategoryCard img={images.sale} background="#FF6262"title='لاتوبس'  />
-        <CategoryCard img={images.pic} background="#F4DBA5" title=' ملابس اطفال ' />
+        {loading === false ? (
+          category.products ? (
+            category.products.slice(0, 6).map((product, index) => {
+              return (
+                <CategoryCard
+                  key={product.id}
+                  img={product.images[0]}
+                  background="#F4DBA5"
+                  title={product.category}
+                />
+              );
+            })
+          ) : (
+            <h4> NO Data</h4>
+          )
+        ) : (
+          <Spinner animation="grow" variant="dark" />
+        )}
       </Row>
     </Container>
-    
   );
 };
 
