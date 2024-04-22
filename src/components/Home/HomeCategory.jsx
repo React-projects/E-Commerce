@@ -18,6 +18,8 @@ const HomeCategory = ({ title }) => {
 
   console.log(category.products);
   console.log(loading);
+  const colors = ["#FFD3E8", "#F4DBA5", "#55CFDF", "#FF6262", "#0034FF", "#FFD3E8"]
+
 
   return (
     <Container>
@@ -30,7 +32,7 @@ const HomeCategory = ({ title }) => {
                 <CategoryCard
                   key={product.id}
                   img={product.images[0]}
-                  background="#F4DBA5"
+                  background={colors[index]}
                   title={product.category}
                 />
               );
