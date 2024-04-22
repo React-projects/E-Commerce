@@ -1,5 +1,4 @@
 import { Container, Row, Spinner } from "react-bootstrap";
-import { images } from "../../assets/Imports/images";
 import CategoryCard from "../Category/CategoryCard";
 import SubTitle from "../Utility/SubTitle";
 import { useDispatch, useSelector } from "react-redux";

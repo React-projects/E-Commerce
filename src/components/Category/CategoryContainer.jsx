@@ -1,6 +1,5 @@
 import CategoryCard from "./CategoryCard";
 import { Container, Row, Spinner } from "react-bootstrap";
-import { images } from "../../assets/Imports/images";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import GetAllCategoriesData from "../../redux/Actions/categoryAction";
