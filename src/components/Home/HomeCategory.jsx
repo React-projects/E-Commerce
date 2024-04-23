@@ -3,7 +3,7 @@ import CategoryCard from "../Category/CategoryCard";
 import SubTitle from "../Utility/SubTitle";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import GetAllCategoriesData from "../../redux/Actions/categoryAction";
+import { GetAllCategoriesData } from "../../redux/Actions/categoryAction";
 
 const HomeCategory = ({ title }) => {
   const dispatch = useDispatch();
@@ -36,7 +36,7 @@ const HomeCategory = ({ title }) => {
             category.data.slice(0, 6).map((item, index) => {
               return (
                 <CategoryCard
-                img={item.image}
+                  img={item.image}
                   key={item.id}
                   background={colors[index]}
                   title={item.name}

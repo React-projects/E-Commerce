@@ -1,13 +1,12 @@
-import ReactPaginate from 'react-paginate';
+import ReactPaginate from "react-paginate";
 
-function Pagination() {
-  const handlePageClick=()=>{
-
-  }
-  const pageCount =500;
+function Pagination({ pageCount, onPress }) {
+  const handlePageClick = (data) => {
+    onPress(data.selected + 1);
+  };
   return (
     <div>
-    <ReactPaginate
+      <ReactPaginate
         breakLabel="..."
         nextLabel="التالي"
         onPageChange={handlePageClick}
@@ -27,7 +26,7 @@ function Pagination() {
         breakLinkClassName={"page-link"}
       />
     </div>
-  )
+  );
 }
 
-export default Pagination
+export default Pagination;
