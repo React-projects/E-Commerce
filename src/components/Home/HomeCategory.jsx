@@ -13,26 +13,33 @@ const HomeCategory = ({ title }) => {
   }, [dispatch]);
 
   const category = useSelector((state) => state.allcategoryData.category);
+
   const loading = useSelector((state) => state.allcategoryData.loading);
 
-  console.log(category.products);
+  console.log(category.data);
   console.log(loading);
-  const colors = ["#FFD3E8", "#F4DBA5", "#55CFDF", "#FF6262", "#0034FF", "#FFD3E8"]
-
+  const colors = [
+    "#FFD3E8",
+    "#F4DBA5",
+    "#55CFDF",
+    "#FF6262",
+    "#0034FF",
+    "#FFD3E8",
+  ];
 
   return (
     <Container>
       <SubTitle title=" التصنيفات" btntitle="المزيد" PathText="allcategory" />
       <Row className="my-2 ">
         {loading === false ? (
-          category.products ? (
-            category.products.slice(0, 6).map((product, index) => {
+          category.data ? (
+            category.data.slice(0, 6).map((item, index) => {
               return (
                 <CategoryCard
-                  key={product.id}
-                  img={product.images[0]}
+                img={item.image}
+                  key={item.id}
                   background={colors[index]}
-                  title={product.category}
+                  title={item.name}
                 />
               );
             })

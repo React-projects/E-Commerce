@@ -29,14 +29,14 @@ function CategoryContainer() {
       <h3 className="admin-content-text">كل التصنيفات</h3>
       <Row className="my-4 ">
         {loading === false ? (
-          category.products ? (
-            category.products.map((product, index) => {
+          category.data ? (
+            category.data.map((item, index) => {
               return (
                 <CategoryCard
-                  key={product.id}
-                  img={product.images[0]}
+                  key={item.id}
+                  img={item.image}
                   background={colors[Math.floor(Math.random() * 5) + 1]}
-                  title={product.category}
+                  title={item.name}
                 />
               );
             })

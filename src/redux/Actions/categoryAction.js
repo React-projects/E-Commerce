@@ -3,7 +3,7 @@ import { GET_ALL_CATEGORY, GET_ERROR } from "../types/type";
 
 export const GetAllCategoriesData = () => async (dispatch) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const response = await useGetData('https://dummyjson.com/products');
+  const response = await useGetData('/api/v1/categories');
   try {
     dispatch({
       type: GET_ALL_CATEGORY,

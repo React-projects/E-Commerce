@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const baseUrl = axios.create({
-  baseUrl: "https://dummyjson.com/products",
+  baseURL: "http://127.0.0.1:8000",
 });
 
-export default baseUrl
+export default baseUrl;
