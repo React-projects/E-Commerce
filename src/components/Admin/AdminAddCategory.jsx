@@ -1,67 +1,17 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { Col, Row, Spinner } from "react-bootstrap";
-import { images } from "../../assets/Imports/images";
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { createCategory } from "../../redux/Actions/categoryAction";
-import { notify, Toast } from "../../massgeError/massageError";
+import useAddCategoryHook from "../../CustomHook/Category/useAddCategoryHook";
 
 function AdminAddCategory() {
-  const dispatch = useDispatch();
-
-  const [Img, setImg] = useState(images.avatar);
-  const [Name, setName] = useState("");
-  const [selectedFile, setSelectedFile] = useState("");
-  const [loading, setloading] = useState(true);
-  const [ispress, setIspress] = useState(false);
-  //  !methods to select  images by user
-  const onImageChange = (event) => {
-    if (event.target.files && event.target.files[0]) {
-      setImg(URL.createObjectURL(event.target.files[0]));
-      setSelectedFile(event.target.files[0]);
-    }
-  };
-
-  const res = useSelector((state) => state.allcategoryData.category);
-
-  //  !methods to send data to database
-  const handelSubmit = async (e) => {
-    e.preventDefault();
-    if (Name === "" || selectedFile === null) {
-      notify(" من فضلك اكمل البيانات اولا !", "warning");
-      return;
-    }
-
-    const formData = new FormData();
-    formData.append("name", Name);
-    formData.append("image", selectedFile);
-    setloading(true);
-    setIspress(true);
-    await dispatch(createCategory(formData));
-    setloading(false);
-  };
-
-  useEffect(() => {
-    if (loading === false) {
-      setImg(images.avatar);
-      setName("");
-      setSelectedFile(null);
-      console.log("تمام الانتهاء");
-      setloading(true);
-
-      setTimeout(() => {
-        setIspress(false);
-      }, 1000);
-
-      //  ! to check  status of response
-      if (res.status === 201) {
-        notify("تمت عملية الاضافة بنجاح", "success");
-      } else {
-        notify("هناك مشكله فى عملية الاضافة", "error");
-      }
-    }
-  }, [loading]);
-
+  const [
+    Toast,
+    Img,
+    Name,
+    loading,
+    ispress,
+    handelSubmit,
+    changeName,
+    onImageChange,
+  ] = useAddCategoryHook();
   return (
     <div>
       <Row className="justify-content-start ">
@@ -84,9 +34,7 @@ function AdminAddCategory() {
             id="upload-photo"
           />
           <input
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
+            onChange={changeName}
             type="text"
             value={Name}
             className="input-form d-block mt-3 px-3"
