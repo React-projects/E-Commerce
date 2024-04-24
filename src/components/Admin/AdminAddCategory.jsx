@@ -1,8 +1,10 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Col, Row, Spinner } from "react-bootstrap";
 import { images } from "../../assets/Imports/images";
 import { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { createCategory } from "../../redux/Actions/categoryAction";
+import { notify, Toast } from "../../massgeError/massageError";
 
 function AdminAddCategory() {
   const dispatch = useDispatch();
@@ -19,9 +21,16 @@ function AdminAddCategory() {
       setSelectedFile(event.target.files[0]);
     }
   };
+
+  const res = useSelector((state) => state.allcategoryData.category);
+
   //  !methods to send data to database
   const handelSubmit = async (e) => {
     e.preventDefault();
+    if (Name === "" || selectedFile === null) {
+      notify(" من فضلك اكمل البيانات اولا !", "warning");
+      return;
+    }
 
     const formData = new FormData();
     formData.append("name", Name);
@@ -37,21 +46,29 @@ function AdminAddCategory() {
       setImg(images.avatar);
       setName("");
       setSelectedFile(null);
-      console.log("  تم التحميل");
+      console.log("تمام الانتهاء");
       setloading(true);
 
       setTimeout(() => {
         setIspress(false);
-      }, 3000);
+      }, 1000);
+
+      //  ! to check  status of response
+      if (res.status === 201) {
+        notify("تمت عملية الاضافة بنجاح", "success");
+      } else {
+        notify("هناك مشكله فى عملية الاضافة", "error");
+      }
     }
   }, [loading]);
+
   return (
     <div>
       <Row className="justify-content-start ">
         <div className="admin-content-text pb-4">اضافه تصنيف جديد</div>
         <Col sm="8">
           <div className="text-form pb-2">صوره التصنيف</div>
-          <label for="upload-photo">
+          <label htmlFor="upload-photo">
             <img
               src={Img}
               alt="fzx"
@@ -82,6 +99,7 @@ function AdminAddCategory() {
           <button onClick={handelSubmit} className="btn-save d-inline mt-2 ">
             حفظ التعديلات
           </button>
+          <Toast />
         </Col>
       </Row>
       {ispress ? (
